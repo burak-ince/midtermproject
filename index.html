@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Education Appointment Form</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container white-container">
+        <h2>Education Appointment System</h2>
+        <form id="appointmentForm" action="/action_page.php">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="title" class="form-control" id="title">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="name" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <input type="text" class="form-control" id="number">
+            </div>
+
+            <div class="dropdown">
+                <select class="btn btn-info btn-block" id="city" name="city">
+                    <option value="">City</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <select class="btn btn-info btn-block" id="course" name="course">
+                    <option value="">Course Type</option>
+                </select>
+            </div>
+    
+            <label for="">How would you like to be located</label>
+            <div class="dropdown">
+                <button class="btn btn-info btn-block" type="button" id="menu3" data-toggle="dropdown">By Phone:
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-info btn-block" type="button" id="menu4" data-toggle="dropdown">Hours:
+                <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu4">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                    </ul>
+            </div>
+
+            <div class="checkbox">
+                <label><input type="checkbox" value="">I agree to the Terms and Conditions.</label>
+            </div>
+            <a href="submit.html"><button type="button" class="btn btn-default" id="submitButton">Submit</button></a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

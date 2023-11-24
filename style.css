@@ -1,0 +1,114 @@
+body {
+    background-image: url(images/student-sweatshirt-laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.container {
+    background-color: white;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.dropdown button {
+    background-color: white;
+    color: #333; /* veya istediğiniz bir renk */
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: #333; /* veya istediğiniz bir renk */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* veya istediğiniz bir renk */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.checkbox label {
+    color: #333; /* veya istediğiniz bir renk */
+}
+
+.btn-primary,
+.btn-info {
+    background-color: white;
+    color: #333; /* veya istediğiniz bir renk */
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: contain; /* Adjust background size for smaller screens */
+    }
+
+    .container {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+}
+
